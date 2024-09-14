@@ -6,20 +6,11 @@ export const fetchPokemon = async (name: string) => {
     throw new Error('Network response was not ok');
   }
 
-  const pokemon = await response.json().then((data) => {
-    return {
-      name: data.name,
-      id: data.id,
-      height: data.height,
-      weight: data.weight,
-      image: data.sprites.front_default,
-    };
-  });
+  const pokemonJson = await response.json();
 
-    return pokemon;
+  return pokemonJson
 
-  ;
-};
+}
 
 
 export default fetchPokemon;
