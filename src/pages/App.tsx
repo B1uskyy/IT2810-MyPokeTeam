@@ -1,15 +1,9 @@
+import '../styles/app.css';
+// import { TeamPage } from './TeamPage.tsx';
+import Root from '../routes/root.tsx';
 
-import '../styles/App.css'
-import PokemonCard from "../components/PokemonCard.tsx";
-
- function App() {
-
-
-    return (
-        <>
-            <PokemonCard/>
-        </>
-    )
+function App() {
+  return <Root />;
 }
 
-export default App
+export default App;
